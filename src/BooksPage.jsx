@@ -63,11 +63,20 @@ export function BooksPage() {
 
   return (
     <main>
-      <BooksIndex books={books} onShow={handleShow} />
-      <Modal show={isBookShowVisible} onClose={() => setIsBookShowVisible(false)}>
-        <BooksShow book={currentBook} onUpdate={handleUpdate} onDestroy={handleDestroy}/>
-      </Modal>
-      <BooksNew onCreate={handleCreate} />
+      <div class="books-body">
+        <BooksIndex books={books} onShow={handleShow} />
+        <Modal show={isBookShowVisible} onClose={() => setIsBookShowVisible(false)}>
+          <BooksShow book={currentBook} onUpdate={handleUpdate} onDestroy={handleDestroy}/>
+        </Modal>
+        <br></br>
+        <br></br>
+        <hr></hr>
+        <BooksNew onCreate={handleCreate} />
+        <br></br>
+        <br></br>
+        <br></br>
+        <hr></hr>
+      </div>
     </main>
   )
 }

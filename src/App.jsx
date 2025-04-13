@@ -8,15 +8,9 @@ function App() {
   return (
     <div style={{ textAlign: 'center' }}>
       <Header />
-      <BooksPage />
       <hr></hr>
-      <br></br>
-      <br></br>
-      <br></br>
+      <BooksPage />
       <MeetingsPage />
-      <br></br>
-      <br></br>
-      <br></br>
       <hr></hr>
       <Footer />
     </div>

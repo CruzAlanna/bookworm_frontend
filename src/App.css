@@ -1,45 +1,44 @@
-body {
+.books-body {
   text-align: center;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #7c4c0d44;
+  background-color: #01014e44;
 }
 
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: rgba(241, 245, 255, 0.534);
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-img { 
-  max-width: 300px; margin-top: 20px;
-  margin: 0 auto;
-  background-color: rgba(241, 245, 255, 0.534);
+.meetings-body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #0d480444;
 }
 
-.dog-item {
-  display: flex;
-  align-items: center; /* Center items vertically */
-  margin-bottom: 15px; /* Space between rows */
-}
-
-.dog-image {
-  width: 200px; /* Set consistent size for images */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 5px; /* Add spacing between image and button */
-}
-
-.park {
+.shelf {
   columns: 3;
 }
 
+.book-card {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  break-inside: avoid;
+}
+
+.meeting {
+  columns: 3;
+}
+
+.meeting-card {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  break-inside: avoid;
+}
 
 h1 {
   font-family: 'Lucida Sans Regular';
