@@ -11,6 +11,7 @@ export function MeetingsIndex({ meetings, onShow }) {
               <h2>Meeting {meeting.id}</h2>
               <h3>Date: {meeting.date}</h3>
               <h4>Time: {meeting.time}</h4>
+              {/* add attributes for meeting like description and genre */}
               <button onClick={() => onShow(meeting) }>Meeting Details</button>
             </div>
           </div>

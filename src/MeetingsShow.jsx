@@ -13,7 +13,7 @@ export function MeetingsShow({ meeting, onUpdate, onDestroy }) {
     <div>
       <h1>Meeting {meeting.id} Details:</h1>
       <h3>Date: {meeting.date} - Time: {meeting.time}</h3>
-      <p>MEETING DETAILS GO HERE-create selected_book controller in api/ genre controller as well</p>
+      <p>Discussion Topic: {meeting.selected_book} - Genre of Book: {meeting.genre}</p>
       <hr></hr>
       <h4>Update This Meeting:</h4>
       <form onSubmit={handleSubmit}>
@@ -23,6 +23,14 @@ export function MeetingsShow({ meeting, onUpdate, onDestroy }) {
           <br></br>
           <div>
             Time: <input defaultValue={meeting.time} name="time" type="text" />
+          </div>
+          <br></br>
+          <div>
+            Discussion Topic: <input defaultValue={meeting.selected_book} name="selected_book" type="text" />
+          </div>
+          <br></br>
+          <div>
+            Genre: <input defaultValue={meeting.genre} name="genre" type="text" />
           </div>
           <br></br>
         <button type="submit">Update</button>
