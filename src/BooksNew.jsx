@@ -29,7 +29,7 @@ export function BooksNew({ onCreate }) {
         </div>
         <br></br>
         <div>
-          Description: <input name="description" type="text" />
+          Description: <textarea name="description" type="text" />
         </div>
         <br></br>
         <button type="submit">Add Book</button>

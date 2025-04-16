@@ -20,6 +20,14 @@ export function MeetingsNew({ onCreate }) {
           Time: <input name="time" type="text" />
         </div>
         <br></br>
+        <div>
+          Topic of Discussion: <input name="selected_book" type="text" />
+        </div>
+        <br></br>
+        <div>
+          Genre: <input name="genre" type="text" />
+        </div>
+        <br></br>
         <button type="submit">Add Meeting</button>
       </form>
     </div>

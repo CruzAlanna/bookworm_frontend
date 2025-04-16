@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer>
-      <p>Copyright 2025</p>
+      <p>BookWorm App Copyright 2025</p>
     </footer>
   )
 }

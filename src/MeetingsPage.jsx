@@ -63,7 +63,7 @@ export function MeetingsPage() {
 
   return (
     <main>
-      <div class="meetings-body">
+      <div className="meetings-body">
         <hr></hr>
         <MeetingsIndex meetings={meetings} onShow={handleShow} />
         <Modal show={isMeetingShowVisible} onClose={() => setIsMeetingShowVisible(false)}>

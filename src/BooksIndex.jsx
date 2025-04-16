@@ -4,12 +4,16 @@ export function BooksIndex({ books, onShow }) {
       <h1>Library Database ({books.length} books)</h1>
       <hr></hr>
       <br></br>
-      <div class="shelf">
+      <div className="shelf">
         {books.map((book) => (
           <div key={book.id}>
-            <div class="book-card">
-              <h2>{book.title} by {book.author}</h2>
+            <div className="book-card">
+              <h2>{book.title}</h2>
+              <h3>{book.author}</h3>
+              <br></br>
               <h4>{book.genre}</h4>
+              <br></br>
+              <br></br>
               <button onClick={() => onShow(book) }>Book Details</button>
               </div>
           </div>
@@ -18,5 +22,3 @@ export function BooksIndex({ books, onShow }) {
     </div>
   );
 }
-
-// Fix issue with container! Group together for the books and meetings in the MeetingsIndex

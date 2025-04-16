@@ -1,3 +1,20 @@
+.logo {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Georgia', serif; /* Gives it a bookish feel */
+}
+
+.logo {
+  display: flex;
+  justify-content: center; /* Centers the books horizontally */
+  align-items: flex-end; /* Aligns all books to the bottom */
+  gap: 5px; /* Adds spacing between books */
+  padding: 10px;
+  border-top: 3px solid #333; /* Simulates the top of a bookshelf */
+  width: fit-content;
+  margin: 0 auto; /* Centers the entire shelf */
+}
+
 .books-body {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -14,17 +31,43 @@
   background-color: #0d480444;
 }
 
+.users-body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #deab1f44;
+}
+
 .shelf {
   columns: 3;
+  padding-left: 150px;
 }
 
 .book-card {
-  padding: 15px;
+  width: 200px; /* Narrower like a book */
+  height: 300px; /* Taller for book proportions */
+  padding: 10px;
   margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
+  border: 3px solid #8B4513; /* Dark brown for a hardcover feel */
+  border-radius: 5px; /* Slight rounded edges */
+  background: linear-gradient(to bottom, #F5E1A4, #EAD196); /* Parchment-like gradient */
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3); /* Creates a subtle spine illusion */
+  text-align: center;
+  font-family: "Georgia", serif; /* Classic book font */
+  position: relative;
   break-inside: avoid;
+}
+
+.book-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 15px;
+  height: 100%;
+  background: linear-gradient(to right, #6D4C41, #8B4513); /* Spine gradient */
+  box-shadow: inset -2px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 .meeting {
@@ -40,6 +83,51 @@
   break-inside: avoid;
 }
 
+.library-card {
+  width: 350px; /* Standard card size */
+  height: 200px; /* Taller to resemble a card */
+  padding: 20px;
+  border: 2px solid #BFA980; /* A warm brownish hue for a classic look */
+  background-color: #F5E1A4; /* Soft parchment-like background */
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3); /* Adds depth */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-aligned text */
+}
+
+.library-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.library-card h3 {
+  font-family: "Courier New", Courier, monospace; /* Classic typewriter font */
+}
+
+.library-card .card-content {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #BFA980; /* Separation line */
+  width: 100%; /* Extends the line across the entire card */
+}
+
+.library-card .barcode {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: "Arial Black", Gadget, sans-serif; /* Mimics barcode */
+}
+
+.user {
+  columns: 3;
+}
+
 h1 {
   font-family: 'Lucida Sans Regular';
   color: #333;
@@ -49,7 +137,39 @@ h1 {
 
 h2 {
   font-family: 'Lucida Sans Regular';
-  color: #333;
+  color: #242424;
+}
+
+h3 {
+  font-family: 'Lucida Sans Regular';
+  color: #242424;
+}
+
+.r-card {
+  padding: 0px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  break-inside: avoid;
+}
+
+.rec {
+  display: flex;
+  justify-content: space-between; /* Space items apart */
+  gap: 5px;
+}
+
+.left-column {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.right-column {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
 }
 
 button {

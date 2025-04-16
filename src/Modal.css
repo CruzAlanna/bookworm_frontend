@@ -13,11 +13,12 @@
   position: fixed;
   background: #efefef;
   width: 80%;
-  height: auto;
+  max-height: 80vh; /* Limits height to 80% of viewport */
+  overflow-y: auto; /* Enables vertical scrolling */
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  padding: 1em;
+  padding: 20px; /* Adds padding inside modal */
 }
 
 .modal-main button.close {
