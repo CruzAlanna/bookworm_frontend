@@ -15,6 +15,55 @@
   margin: 0 auto; /* Centers the entire shelf */
 }
 
+.about-outer {
+  background-color: #ddcca9; /* Soft, warm background color */
+}
+
+.about-body {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #F5E1A4; /* Soft parchment-like background */
+  border: 3px solid #8B4513; /* Dark brown, book-cover-like border */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+  font-family: "Georgia", serif; /* Classic book font */
+  text-align: justify;
+  border-radius: 10px; /* Smooth edges */
+  line-height: 1.8;
+}
+
+h1, h3 {
+  font-family: "Garamond", serif; /* Elegant, book-like font */
+  text-align: center;
+}
+
+.message {
+  font-size: 18px;
+  font-style: italic;
+  background: #EAD196; /* Vintage paper effect */
+  padding: 15px;
+  border-left: 5px solid #8B4513;
+}
+
+.about-nav {
+  font-size: 12px;
+  font-weight: bold;
+  color: #8B4513;
+  text-decoration: none;
+  padding: 3px 9px;
+  border: 2px solid #8B4513;
+  background: #F5E1A4;
+  border-radius: 5px;
+  display:block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bookclub-button {
+  color: white; /* Ensures the link appears white */
+  text-decoration: none; /* Removes the underline */
+}
+
 .books-body {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -36,7 +85,7 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #deab1f44;
+  background-color: #ddcca9;
 }
 
 .shelf {
@@ -84,7 +133,7 @@
 }
 
 .library-card {
-  width: 350px; /* Standard card size */
+  width: 330px; /* Standard card size */
   height: 200px; /* Taller to resemble a card */
   padding: 20px;
   border: 2px solid #BFA980; /* A warm brownish hue for a classic look */
@@ -126,6 +175,7 @@
 
 .user {
   columns: 3;
+  padding-left: 150px;
 }
 
 h1 {

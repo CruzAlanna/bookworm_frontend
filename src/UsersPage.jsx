@@ -62,11 +62,15 @@ export function UsersPage() {
         <br></br>
         <br></br>
         <hr></hr>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <UsersNew onCreate={handleCreate} />
         <br></br>
         <br></br>
         <br></br>
-        <hr></hr>
+        <br></br>
       </div>
     </main>
   )

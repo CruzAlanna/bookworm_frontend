@@ -64,7 +64,6 @@ export function MeetingsPage() {
   return (
     <main>
       <div className="meetings-body">
-        <hr></hr>
         <MeetingsIndex meetings={meetings} onShow={handleShow} />
         <Modal show={isMeetingShowVisible} onClose={() => setIsMeetingShowVisible(false)}>
           <MeetingsShow meeting={currentMeeting} onUpdate={handleUpdate} onDestroy={handleDestroy}/>
@@ -72,7 +71,13 @@ export function MeetingsPage() {
         <br></br>
         <br></br>
         <hr></hr>
+        <br></br>
+        <br></br>
+        <br></br>
         <MeetingsNew onCreate={handleCreate} />
+        <br></br>
+        <br></br>
+        <br></br>
         <br></br>
       </div>
     </main>

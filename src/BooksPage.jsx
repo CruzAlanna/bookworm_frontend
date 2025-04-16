@@ -71,11 +71,10 @@ export function BooksPage() {
         <br></br>
         <br></br>
         <hr></hr>
+        <br></br>
         <BooksNew onCreate={handleCreate} />
         <br></br>
         <br></br>
-        <br></br>
-        <hr></hr>
       </div>
     </main>
   )

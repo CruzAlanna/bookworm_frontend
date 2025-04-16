@@ -1,7 +1,7 @@
 export function UsersIndex({ users, onShow }) {
   return (
     <div> 
-      <h1>Book Club Members</h1>
+      <h1>BookClub Members</h1>
       <hr></hr>
       <br></br>
       <div className="user">

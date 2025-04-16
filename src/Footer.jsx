@@ -1,7 +1,9 @@
-export function Footer() {
+function Footer() {
   return (
     <footer>
-      <p>BookWorm App Copyright 2025</p>
+      <p>BookWorm Copyright 2025</p>
     </footer>
   )
-}
+};
+
+export default Footer;

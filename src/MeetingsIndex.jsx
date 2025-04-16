@@ -8,7 +8,7 @@ export function MeetingsIndex({ meetings, onShow }) {
         {meetings.map((meeting) => (
           <div key={meeting.id}>
             <div className="meeting-card">
-              <h2>Meeting | Located In Section: {meeting.id}</h2>
+              <h2>Meeting | Id: #{meeting.id}</h2>
               <h3>Date: {meeting.date}</h3>
               <h4>Time: {meeting.time}</h4>
               {/* add attributes for meeting like description and genre */}

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Header() {
   return (
     <header>
@@ -12,7 +14,10 @@ export function Header() {
         <div className="book" style={{ backgroundColor: '#8A2BE2' }}>M</div>
       </div>
       <nav>
-        <a href="#">Book Club</a> | <a href="#">Library</a>
+        <Link to="/about">About</Link> | {""}
+        <Link to="/users">BookClub</Link> | {""}
+        <Link to="/">Library</Link> | {""}
+        <Link to="/meetings">Meetings</Link>
       </nav>
       
     </header>
