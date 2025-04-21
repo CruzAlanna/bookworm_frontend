@@ -19,6 +19,7 @@ export function UsersIndex({ users, onShow }) {
                 ||| |||| ||||| |||| || ||||| || ||||
               </div>
             </div>
+            <br></br>
           </div>
         ))}
       </div>

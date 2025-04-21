@@ -14,7 +14,7 @@ function About() {
         <br></br>
         <nav className="about-nav">
           <h3>Join our BookClub by clicking the link below!</h3>
-          <button><Link to="/users" className="bookclub-button">Join BookClub</Link></button>
+          <button><Link to="/signup" className="bookclub-button">Join BookClub</Link></button>
         </nav>
         <br></br>
         <br></br>

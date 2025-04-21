@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { MeetingsIndex } from "./MeetingsIndex";
-import { MeetingsNew } from "./MeetingsNew";
-import { MeetingsShow } from "./MeetingsShow";
-import { Modal } from './Modal';
+import { MeetingsIndex } from "../MeetingsIndex";
+import { MeetingsNew } from "../MeetingsNew";
+import { MeetingsShow } from "../MeetingsShow";
+import { Modal } from '../Modal';
 
 export function MeetingsPage() {
   

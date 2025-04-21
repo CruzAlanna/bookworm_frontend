@@ -54,7 +54,6 @@ export function UsersShow({ user, onUpdate, onDestroy }) {
       <h1>Member: {user.name}</h1>
       <h3>Contact via email: {user.email} </h3>
       <hr></hr>
-      {/* Update the update and destroy actions to limit who can view this part */}
       <h4>Update Member Info:</h4>
       <form onSubmit={handleSubmit}>
         <div>

@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { BooksIndex } from "./BooksIndex";
-import { BooksNew } from "./BooksNew";
-import { BooksShow } from "./BooksShow";
-import { Modal } from './Modal';
+import { BooksIndex } from "../BooksIndex";
+import { BooksNew } from "../BooksNew";
+import { BooksShow } from "../BooksShow";
+import { Modal } from '../Modal';
 
 export function BooksPage() {
-  
+
   const [books, setBooks] = useState([]);
   const [isBookShowVisible, setIsBookShowVisible] = useState(false);
   const [currentBook, setCurrentBook] = useState({});

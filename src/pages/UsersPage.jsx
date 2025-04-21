@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { UsersIndex } from "./UsersIndex";
-import { UsersNew } from "./UsersNew";
-import { UsersShow } from "./UsersShow";
-import { Modal } from './Modal';
+import { UsersIndex } from "../UsersIndex";
+import { UsersNew } from "../UsersNew";
+import { UsersShow } from "../UsersShow";
+import { Modal } from '../Modal';
 
 export function UsersPage() {
   
@@ -15,15 +15,6 @@ export function UsersPage() {
     axios.get("http://localhost:3000/bookclub")
     .then((response) => {
       setUsers(response.data);
-    })
-  };
-
-
-  const handleCreate = (params, successCallback) => {
-    axios.post("http://localhost:3000/signup", params)
-    .then((response) => {
-      setUsers([...users, response.data]);
-      successCallback();
     })
   };
 
@@ -57,7 +48,7 @@ export function UsersPage() {
       <div className="users-body">
         <UsersIndex users={users} onShow={handleShow} />
         <Modal show={isUserShowVisible} onClose={() => setIsUserShowVisible(false)}>
-          <UsersShow user={currentUser} onUpdateRecommendation={handleUpdate} onDestroy={handleDestroy}/>
+          <UsersShow user={currentUser} onUpdate={handleUpdate} onDestroy={handleDestroy}/>
         </Modal>
         <br></br>
         <br></br>
@@ -66,7 +57,7 @@ export function UsersPage() {
         <br></br>
         <br></br>
         <br></br>
-        <UsersNew onCreate={handleCreate} />
+        {/* <UsersNew onCreate={handleCreate} /> */}
         <br></br>
         <br></br>
         <br></br>

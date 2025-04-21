@@ -1,8 +1,6 @@
 import "./App.css";
 import { Header } from "./Header";
-import { BooksPage } from "./BooksPage";
-import { MeetingsPage } from "./MeetingsPage";
-import { UsersPage } from "./UsersPage";
+import React from 'react';
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 
